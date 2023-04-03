@@ -1,5 +1,6 @@
-package com.music;
+package Collections;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Music implements MusicInterface{
@@ -38,5 +39,12 @@ public class Music implements MusicInterface{
 					, temp);
 		}
 		
-	}	
+	}
+	public List<Music> getPlayList() {
+		List<Music> lst = new ArrayList<>();
+		lst.add(new Music("S1"));
+		lst.add(new Music("S2"));
+		lst.add(new Music("S3"));
+		return lst;
+	}
 }
